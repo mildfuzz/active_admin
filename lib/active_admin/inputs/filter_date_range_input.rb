@@ -26,8 +26,7 @@ module ActiveAdmin
         current_value = @object.send(input_name)
         { :size => 12,
           :class => "datepicker",
-          :max => 10,
-          :value => current_value.respond_to?(:strftime) ? current_value.strftime("%Y-%m-%d") : "" }
+          :max => 10 }
       end
     end
   end
